@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+h3{
+    font-size: 44px;
+    line-height: 55px;
+    color: #020202;
+    font-weight: 600;
+}
+
+h6{
+    font-size: 44px;
+    line-height: 55px;
+    color: rgba(100, 95, 95, 0.71);
+    font-weight: 600;
+}
+
+/*Time to add styles for nav bar*/
+.nav{
+    display: flex;                   /*--------display all items in one row------------*/
+    flex-direction: row;             /*--------flex direction is row------------*/
+    justify-content: space-between;  /*--------want to have space between content------------*/
+    align-items: center;
+}
