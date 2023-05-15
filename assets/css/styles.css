@@ -37,9 +37,9 @@ h6{
     width: 30px;
     height: 30px;
     border-radius:50%;
-    color: #fa6805;
+    color: #0a0a0a;
     font-size: 20px;
-    border: 1px solid #b75353;
+    border: 1px solid #e36000;;
     background: transparent;
     justify-content: center;
     padding: 0;
@@ -50,8 +50,7 @@ h6{
 }
 
 .navbar-social a:hover,.navbar-social a.active{
-    background: #f5cc05;
-    color:black;
+    color: #e36000;
     box-shadow: 0 0 20px #c48f69;
 }
 
@@ -76,7 +75,47 @@ h6{
     margin: 5px 0;
     position: relative;
     display: block;      /*To put everything in one side*/
-    transition: all .5s ease;
+    transition: all .5s ease-out 0s;
+}
+/*No need to display the hamburger icon when in desktop mode So lets hide the hamburger...,*/
+.nav .navbar-toggler{
+    display: none;
+    border: none;
+    outline: none;
 }
 
+/*Lets start to style navigation links*/
+.nav .menu-bar .menu-items{
+    display: flex; /*now menue apears in a row stick together*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+}
+
+/*Lets add space between menue items*/
+.nav .menu-bar .menu-items li{
+    margin: 0 12px;
+}
+
+/*Time to style the menue links which are in anchor tags*/
+.nav .menu-bar .menu-items li a{
+    font-weight: bold;
+    font-size: medium;
+    color: #020202;
+}
+
+.nav .menu-bar .menu-items li a:hover{
+    color: #e36000;
+}
+
+/*Add style for follow*/
+.nav .navbar-social span{
+    font-weight: bold;
+    font-size: medium;
+    color: #020202;
+}
+
+.nav .navbar-social span:hover{
+    color: #e36000;
+}
